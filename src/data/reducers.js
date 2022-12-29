@@ -13,6 +13,10 @@ import {
   storeName as loginStoreName,
 } from '../login';
 import {
+  reducer as progressiveProfilingPageReducers,
+  storeName as progressiveProfilingPageStoreName,
+} from '../progressive-profiling';
+import {
   reducer as registerReducer,
   storeName as registerStoreName,
 } from '../register';
@@ -20,10 +24,6 @@ import {
   reducer as resetPasswordReducer,
   storeName as resetPasswordStoreName,
 } from '../reset-password';
-import {
-  reducer as welcomePageReducers,
-  storeName as welcomePageStoreName,
-} from '../welcome';
 
 const createRootReducer = () => combineReducers({
   [loginStoreName]: loginReducer,
@@ -31,6 +31,6 @@ const createRootReducer = () => combineReducers({
   [commonComponentsStoreName]: commonComponentsReducer,
   [forgotPasswordStoreName]: forgotPasswordReducer,
   [resetPasswordStoreName]: resetPasswordReducer,
-  [welcomePageStoreName]: welcomePageReducers,
+  [progressiveProfilingPageStoreName]: progressiveProfilingPageReducers,
 });
 export default createRootReducer;

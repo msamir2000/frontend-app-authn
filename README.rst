@@ -72,8 +72,8 @@ The authentication micro-frontend also requires the following additional variabl
      - The fully-qualified URL to the password reset support page in the target environment.
      - ``https://support.example.com``
 
-   * - ``WELCOME_PAGE_SUPPORT_LINK``
-     - The fully-qualified URL to the welcome support page in the target environment.
+   * - ``PROGRESSIVE_PROFILING_SUPPORT_LINK``
+     - The fully-qualified URL to the progressive profiling support page in the target environment.
      - ``https://support.example.com``
 
    * - ``TOS_AND_HONOR_CODE``

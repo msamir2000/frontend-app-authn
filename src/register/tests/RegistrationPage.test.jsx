@@ -13,7 +13,7 @@ import { Router } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 
-import { COMPLETE_STATE, PENDING_STATE, WELCOME_PAGE } from '../../data/constants';
+import { COMPLETE_STATE, PENDING_STATE, PROGRESSIVE_PROFILING_PAGE } from '../../data/constants';
 import {
   backupRegistrationFormBegin,
   clearUsernameSuggestions,
@@ -764,7 +764,7 @@ describe('RegistrationPage', () => {
         </Router>,
       ));
       progressiveProfilingPage.update();
-      expect(history.location.pathname).toEqual(WELCOME_PAGE);
+      expect(history.location.pathname).toEqual(PROGRESSIVE_PROFILING_PAGE);
     });
 
     // ******** test hinted third party auth ********
